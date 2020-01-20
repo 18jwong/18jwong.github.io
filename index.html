@@ -13,15 +13,22 @@
 
 		h1 {
 			font-size: 75px;
-			margin: 25px 0 50px 0;
+			margin: 25px 15px 0 15px;
 		}
 		h3 {
 			font-size: 25px;
-			margin: 25px 0 0 0;
+			margin: 25px 15px 0 15px;
 		}
 		p {
-			margin: 0;
+			margin: 0 15px 0 15px;
 		}
+		ul {
+			margin: 0 25px 25px 0;
+		}
+	    li {
+	      	display: inline;
+	      	padding: 0px 10px 0px 10px;
+	    }
 
 		img.portrait {
 			max-width: 350px;
@@ -30,11 +37,23 @@
 		}
 		img.project {
 			max-width: 350px;
-			margin: 0 25px 0 0;
+			margin: 0 0 0 0;
 			border-radius: 25px;
+		}
+		img.social {
+			max-width: 50px;
+			margin: 0 0 0 0;
 		}
 		.links {
 			margin: 0 0 50px 0;
+		}
+
+		@media (max-width: 500px) {
+			h1{
+				font-size: 50px;
+				margin: 10px 0 0 0;
+				padding: 15px;
+			}
 		}
 	</style>
 </head>
@@ -43,17 +62,33 @@
 	<header>
 		<img src="img/jordan.JPG" class="portrait" alt="Photo of Jordan Wong">
 
-		<h1>jordan wong</h1>	
+		<h1>Jordan Wong</h1>
+		<ul>
+			<li>
+				<a href="https://github.com/18jwong">
+					<img src="img/github.PNG" class="social" alt="GitHub icon">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/jordan-wong-530a83166/">
+					<img src="img/linkedin.PNG" class="social" alt="LinkedIn icon">
+				</a>
+			</li>
+		</ul>
 
 		<h3>Defenstruments</h3>
-		<img src="img/defenstruments.PNG" class="project" alt="Screen cap of Defenstruments">
+		<a href="https://github.com/18jwong/MITD">
+			<img src="img/defenstruments.PNG" class="project" alt="Screen cap of Defenstruments">
+		</a>
 		<p>Defenstruments is a "Plants vs Zombies"-inspired tower defense game made with Unity. All code, music, and art was created by myself.</p>
 		<div class="links">
 			<a href="https://github.com/18jwong/MITD">Defenstruments GitHub Repo</a>
 		</div>
 
 		<h3>January Project</h3>
-		<img src="img/janproj.PNG" class="project" alt="Screen cap of January Project">
+		<a href="https://github.com/18jwong/janproj">
+			<img src="img/janproj.PNG" class="project" alt="Screen cap of January Project">
+		</a>
 		<p>January Project is a puzzle game made with Unity. The project was made for one of my high school classes and was made over the course of the month of January. This was my first experience with Unity and also composing music for a game.</p>
 		<div class="links">
 			<a href="https://github.com/18jwong/janproj">January Project GitHub Repo</a>
